@@ -1,11 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="57f83120-8b58-4a1b-8964-54a4cf05da1d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/EventView.vue" afterDir="false" />
+    <list default="true" id="57f83120-8b58-4a1b-8964-54a4cf05da1d" name="Changes" comment="initial store for tokens (jwt)">
+      <change afterPath="$PROJECT_DIR$/src/views/CreateView.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/LoginView.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/NotFoundView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stores/token.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/stores/token.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/HomeView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/HomeView.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +25,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JavaScript File" />
         <option value="Vue Composition API Component" />
       </list>
     </option>
@@ -40,6 +51,10 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "npm.run dev.executor": "Run",
     "ts.external.directory.path": "/Applications/IntelliJ IDEA.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
@@ -89,11 +104,51 @@
       <workItem from="1716813528475" duration="40000" />
       <workItem from="1716813572692" duration="10000" />
       <workItem from="1716813586017" duration="137000" />
-      <workItem from="1716813724288" duration="183000" />
+      <workItem from="1716813724288" duration="6743000" />
     </task>
+    <task id="LOCAL-00001" summary="inital commit">
+      <option name="closed" value="true" />
+      <created>1716813918741</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1716813918741</updated>
+    </task>
+    <task id="LOCAL-00002" summary="attaching bearer to axios for every request">
+      <option name="closed" value="true" />
+      <created>1716835839247</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1716835839247</updated>
+    </task>
+    <task id="LOCAL-00003" summary="deleting unnecessary styles and images">
+      <option name="closed" value="true" />
+      <created>1716835861242</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1716835861242</updated>
+    </task>
+    <task id="LOCAL-00004" summary="initial store for tokens (jwt)">
+      <option name="closed" value="true" />
+      <created>1716835875956</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1716835875956</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="inital commit" />
+    <MESSAGE value="attaching bearer to axios for every request" />
+    <MESSAGE value="deleting unnecessary styles and images" />
+    <MESSAGE value="initial store for tokens (jwt)" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial store for tokens (jwt)" />
   </component>
 </project>
