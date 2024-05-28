@@ -21,7 +21,9 @@ function addCategory() {
 </script>
 
 <template>
+  <h1>Vytvořit event</h1>
 
+  <AddressComponent v-model="location"/>
 </template>
 
 <style scoped>
