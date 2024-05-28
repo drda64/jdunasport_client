@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from 'vue';
+import AddressComponent from "../components/base/AddressComponent.vue";
 import { useTokenStore } from '../stores/token.js';
 
 // categories array ref
