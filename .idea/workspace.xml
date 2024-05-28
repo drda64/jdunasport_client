@@ -4,18 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57f83120-8b58-4a1b-8964-54a4cf05da1d" name="Changes" comment="initial store for tokens (jwt)">
-      <change afterPath="$PROJECT_DIR$/src/views/CreateView.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/LoginView.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/NotFoundView.vue" afterDir="false" />
+    <list default="true" id="57f83120-8b58-4a1b-8964-54a4cf05da1d" name="Changes" comment="console loggin update">
+      <change afterPath="$PROJECT_DIR$/src/assets/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/base/AddressComponent.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/base/InputComponent.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/Category.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stores/token.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/stores/token.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/HomeView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/HomeView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/CreateView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/CreateView.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +102,7 @@
       <workItem from="1716813528475" duration="40000" />
       <workItem from="1716813572692" duration="10000" />
       <workItem from="1716813586017" duration="137000" />
-      <workItem from="1716813724288" duration="6743000" />
+      <workItem from="1716813724288" duration="19147000" />
     </task>
     <task id="LOCAL-00001" summary="inital commit">
       <option name="closed" value="true" />
@@ -138,7 +136,79 @@
       <option name="project" value="LOCAL" />
       <updated>1716835875956</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="adding nav links">
+      <option name="closed" value="true" />
+      <created>1716839034730</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1716839034730</updated>
+    </task>
+    <task id="LOCAL-00006" summary="adding CreateView">
+      <option name="closed" value="true" />
+      <created>1716839052888</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1716839052888</updated>
+    </task>
+    <task id="LOCAL-00007" summary="HomeView basic view">
+      <option name="closed" value="true" />
+      <created>1716839063397</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1716839063397</updated>
+    </task>
+    <task id="LOCAL-00008" summary="adding before each to check auth store token">
+      <option name="closed" value="true" />
+      <created>1716839080719</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1716839080719</updated>
+    </task>
+    <task id="LOCAL-00009" summary="init login view form">
+      <option name="closed" value="true" />
+      <created>1716839090932</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1716839090932</updated>
+    </task>
+    <task id="LOCAL-00010" summary="adding pinia to main">
+      <option name="closed" value="true" />
+      <created>1716839100801</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1716839100801</updated>
+    </task>
+    <task id="LOCAL-00011" summary="view for not found">
+      <option name="closed" value="true" />
+      <created>1716839110317</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1716839110317</updated>
+    </task>
+    <task id="LOCAL-00012" summary="adding pinia">
+      <option name="closed" value="true" />
+      <created>1716839117070</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1716839117070</updated>
+    </task>
+    <task id="LOCAL-00013" summary="console loggin update">
+      <option name="closed" value="true" />
+      <created>1716839131124</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1716839131124</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,6 +219,15 @@
     <MESSAGE value="attaching bearer to axios for every request" />
     <MESSAGE value="deleting unnecessary styles and images" />
     <MESSAGE value="initial store for tokens (jwt)" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial store for tokens (jwt)" />
+    <MESSAGE value="adding nav links" />
+    <MESSAGE value="adding CreateView" />
+    <MESSAGE value="HomeView basic view" />
+    <MESSAGE value="adding before each to check auth store token" />
+    <MESSAGE value="init login view form" />
+    <MESSAGE value="adding pinia to main" />
+    <MESSAGE value="view for not found" />
+    <MESSAGE value="adding pinia" />
+    <MESSAGE value="console loggin update" />
+    <option name="LAST_COMMIT_MESSAGE" value="console loggin update" />
   </component>
 </project>
