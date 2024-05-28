@@ -3,10 +3,16 @@ import { RouterLink, RouterView } from 'vue-router'
 </script>
 
 <template>
-  <RouterLink to="/">Home</RouterLink>
-  <RouterLink to="/events">Events</RouterLink>
-  <RouterLink to="/create">Events</RouterLink>
-  <RouterView />
+  <div id="app-container">
+    <nav>
+      <RouterLink to="/">Dashboard</RouterLink>
+      <RouterLink to="/events">Přidat se do eventu</RouterLink>
+      <RouterLink to="/create">Vytvořit event</RouterLink>
+    </nav>
+    <div id="view">
+      <RouterView />
+    </div>
+  </div>
 </template>
 
 <style scoped>
