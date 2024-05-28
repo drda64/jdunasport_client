@@ -28,6 +28,11 @@ const router = createRouter({
       component: () => import(/* webpackChunkName: "login" */ '../views/LoginView.vue')
     },
     {
+      path: '/create',
+      name: 'create',
+      component: () => import(/* webpackChunkName: "create" */ '../views/CreateView.vue'),
+    },
+    {
       path: '/:pathMatch(.*)*',
       name: '404',
       component: () => import(/* webpackChunkName: "404" */ '../views/NotFoundView.vue'),
