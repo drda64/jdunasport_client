@@ -1,15 +1,10 @@
 <script setup>
 import {ref} from 'vue';
 import { useNotification } from "@kyvg/vue3-notification";
-
 const { notify }  = useNotification()
 
 const categoryName = ref('');
 const categoryNumber = ref('');
-
-function emitCategory() {
-  console.log("fff")
-}
 
 function validateNumberInput(event) {
   if(isNaN(event.key) && event.key !== 'Backspace') {
@@ -49,7 +44,7 @@ function validateCategoryNumber() {
     <label>Přidat kategorii</label>
     <div id="category-adder-container">
       <input v-model="categoryName" type="text" placeholder="Hráč">
-      <input type="number" v-model="categoryNumber" class="counter" @keydown="validateNumberInput" step="1">
+      <input type="number" v-model="categoryNumber" class="counter" @keydown="validateNumberInput" step="1" min="1" value="1">
       <button @click.prevent="validateSubmit">Přidat</button>
     </div>
   </div>
@@ -72,7 +67,6 @@ label {
 }
 
 button {
-  border-radius: 10px;
   background-color: #5EC4B1;
   border: none;
 
