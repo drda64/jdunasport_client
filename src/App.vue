@@ -13,6 +13,8 @@ import { RouterLink, RouterView } from 'vue-router'
       <RouterView />
     </div>
   </div>
+
+  <notifications />
 </template>
 
 <style scoped>
