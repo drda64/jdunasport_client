@@ -5,40 +5,81 @@ import InputComponent from "@/components/base/InputComponent.vue";
 import AddressComponent from "@/components/base/AddressComponent.vue";
 import CategoryAdderComponent from "@/components/create/CategoryAdderComponent.vue";
 
-const { values, errors, defineField } = useForm({
+const options = ref([])
+
+axios.get('http://localhost:8009/sports').then(response => {
+  return response.data.map(sport => {
+     options.value.push({value: sport.id, text: sport.name});
+  });
+});
+
+const { values, errors, handleSubmit, defineField } = useForm({
   validationSchema: yup.object({
     name: yup.string().required(),
     description: yup.string().required(),
     address: yup.string().required(),
     date: yup.date().required(),
     time: yup.string().required(),
+    sport: yup.number().required()
   }),
 });
 
 const [name, nameAttrs] = defineField('name', {
-  validateOnModelUpdate: false,
 });
 
 const [description, descriptionAttrs] = defineField('description', {
-  validateOnModelUpdate: false,
 });
 
 const [address, addressAttrs] = defineField('address', {
-  validateOnModelUpdate: false,
 });
 
 const [date, dateAttrs] = defineField('date', {
-  validateOnModelUpdate: false,
 });
 
 const [time, timeAttrs] = defineField('time', {
-  validateOnModelUpdate: false,
 });
+
+const [sport, sportAttrs] = defineField('sport', {
+  initialValue: 1
+});
+
+function handleDeleteCategory(index) {
+  categories.value.splice(index, 1);
+  validateCategories()
+}
+
+function handleAddCategory(category) {
+  categories.value.push(category);
+  validateCategories()
+}
+
+const onSubmit = handleSubmit(values => {
+  if (validateCategories()) {
+    submitForm();
+  }
+});
+
+function validateCategories() {
+  if (categories.value.length === 0) {
+    categoryError.value = 'Alespoň jedna kategorie musí být přidána';
+    return false
+  } else {
+    categoryError.value = '';
+    return true
+  }
+}
+
+function submitForm() {
+    let eventItem = new EventItem(values.name, values.description, values.address, values.date, values.time, values.sport, categories.value);
+    eventItem.submitEvent();
+}
+
+
 </script>
 
 <template>
   <h1>Vytvořit event</h1>
-  <form>
+  <form @submit.prevent="onSubmit">
     <div class="column">
       <InputComponent v-model="name" v-bind="nameAttrs" :error="errors.name" label="Název"></InputComponent>
       <InputComponent v-model="description" v-bind="descriptionAttrs" :error="errors.description" label="Popis" textarea></InputComponent>
@@ -47,29 +88,43 @@ const [time, timeAttrs] = defineField('time', {
       <InputComponent v-model="time" v-bind="timeAttrs" :error="errors.time" label="Čas" type="time"></InputComponent>
     </div>
     <div class="column">
-      <CategoryAdderComponent></CategoryAdderComponent>
+      <SelectComponent v-model="sport" v-bind="sportAttrs" label="Sport" :options="options"></SelectComponent>
+      <CategoryAdderComponent @add-category="handleAddCategory"></CategoryAdderComponent>
+      <CategoryListComponent :error="categoryError" :categories="categories" @delete-category="handleDeleteCategory"></CategoryListComponent>
+
+      <button type="submit">Vytvořit event</button>
     </div>
   </form>
+  <pre>{{ values }}</pre>
+  <pre>{{ errors }}</pre>
 </template>
 
 <style scoped>
 form {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   gap: 1rem;
 }
 
 .column {
-  flex: 1 1 48%;
+  flex: 1 1 100%;
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
+button {
+  background-color: #5EC4B1;
+  border: none;
+
+  padding: 1rem;
+
+  font-size: 0.9rem;
+}
+
 @media screen and (min-width: 768px) {
   .column {
-    flex: 1 1 100%;
+    flex: 1 1 48%;
   }
-
 }
 </style>
