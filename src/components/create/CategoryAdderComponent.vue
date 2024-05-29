@@ -17,8 +17,16 @@ function validateNumberInput(event) {
   }
 }
 
+const emit = defineEmits(['add-category']);
+
 function validateSubmit() {
-  validateCategoryNumber()
+  if (!validateCategoryNumber()) {
+    return false;
+  }
+  emit('add-category', {
+    name: categoryName.value,
+    capacity: categoryNumber.value
+  });
 }
 
 function validateCategoryNumber() {
