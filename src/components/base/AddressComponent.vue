@@ -8,6 +8,10 @@ const suggestions = ref([])
 // Emit event function
 const emit = defineEmits(['update:modelValue'])
 
+defineProps({
+  error: String
+})
+
 async function fetchSuggestions() {
   if (address.value.length > 2) {
     try {
