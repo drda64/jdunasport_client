@@ -70,16 +70,16 @@ function inputAddress(value) {
 </script>
 
 <template>
-  <form autocomplete="off">
-    <div class="autocomplete">
-      <input type="text" v-model="address" @focusout="hideSuggestions" @focusin="showSuggestions" @input="inputAddress">
-      <div class="autocomplete-items" v-if="suggestions.length > 0">
-        <div @click="console.log('clicked')" v-for="suggestion in suggestions" :key="suggestion.id">
-          <div @mousedown.prevent="clickSuggestion(suggestion)">{{ suggestion.full_address }}</div>
-        </div>
+  <div class="autocomplete">
+    <label for="address">Lokace</label>
+    <input :class="{ 'open-input': suggestions.length > 0 }" type="text" v-model="address" @focusout="hideSuggestions" @focusin="showSuggestions" @input="inputAddress">
+    <p v-if="error && suggestions.length === 0" class="error">{{ error }}</p>
+    <div class="autocomplete-items" v-if="suggestions.length > 0">
+      <div @click="console.log('clicked')" v-for="suggestion in suggestions" :key="suggestion.id">
+        <div @mousedown.prevent="clickSuggestion(suggestion)">{{ suggestion.full_address }}</div>
       </div>
     </div>
-  </form>
+  </div>
 </template>
 
 <style scoped>
