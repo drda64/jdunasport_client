@@ -4,6 +4,14 @@ import * as yup from 'yup';
 import InputComponent from "@/components/base/InputComponent.vue";
 import AddressComponent from "@/components/base/AddressComponent.vue";
 import CategoryAdderComponent from "@/components/create/CategoryAdderComponent.vue";
+import CategoryListComponent from "@/components/create/CategoryListComponent.vue";
+import SelectComponent from "@/components/base/SelectComponent.vue";
+import EventItem from "@/models/EventItem";
+import axios from "axios";
+
+const categories = ref([]);
+const categoryError = ref('');
+categories.value.push({name: 'Hráč', capacity: 1});
 
 const options = ref([])
 
