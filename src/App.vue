@@ -19,7 +19,7 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <style scoped>
   #app-container {
-    max-width: 50rem;
+    max-width: 60rem;
     width: 100%;
 
     padding-left: 2rem;
