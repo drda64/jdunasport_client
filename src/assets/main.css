@@ -61,6 +61,30 @@ input:focus, textarea:focus {
     outline: none;
 }
 
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+select {
+    width: 100%;
+    border: none;
+    border-radius: 0;
+
+    font-size: 0.9rem;
+    font-weight: 400;
+
+    padding: 1rem 1.5rem;
+
+    background-color: #FAFAFA;
+    appearance: none; /* Removes default browser styling */
+}
+
+select:focus {
+    outline: none;
+}
+
 .error {
     background-color: #f54646;
     color: white;
