@@ -99,7 +99,6 @@ function inputAddress(value) {
 .autocomplete-items {
   font-size: 0.9rem;
   position: absolute;
-  border: 1px solid #d4d4d4;
   border-top: none;
   z-index: 99;
   top: 100%;
@@ -112,9 +111,9 @@ function inputAddress(value) {
 
 /* vnorene divy */
 .autocomplete-items > div > div {
-  padding: 10px;
+  padding: 0.7rem 1.5rem;
   cursor: pointer;
-  background-color: #fff;
+  background-color: white;
 }
 
 .autocomplete-items > div > div:hover {
