@@ -1,12 +1,12 @@
 // src/axios.js
 
 import axios from 'axios';
-import { useAuthStore } from './stores/token.js';
+import { useTokenStore } from '@/stores/token.js';
 
-axios.defaults.baseURL = 'http://127.0.0.1:8009';
+axios.defaults.baseURL = 'http://localhost:8009';
 
 axios.interceptors.request.use(config => {
-    const authStore = useAuthStore();
+    const authStore = useTokenStore();
     const token = authStore.token;
     if (token) {
         config.headers['Authorization'] = `Bearer ${token}`;
