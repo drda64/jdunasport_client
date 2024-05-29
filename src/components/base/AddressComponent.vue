@@ -87,6 +87,10 @@ function inputAddress(value) {
 </template>
 
 <style scoped>
+.open-input {
+  border-radius: 10px 10px 0 0;
+}
+
 .autocomplete {
   position: relative;
   display: inline-block;
