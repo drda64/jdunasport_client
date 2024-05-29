@@ -1,5 +1,6 @@
 <script setup>
-import {useForm} from 'vee-validate';
+import {useForm, validate} from 'vee-validate';
+import { ref } from 'vue';
 import * as yup from 'yup';
 import InputComponent from "@/components/base/InputComponent.vue";
 import AddressComponent from "@/components/base/AddressComponent.vue";
