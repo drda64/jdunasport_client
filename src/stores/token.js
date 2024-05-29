@@ -14,7 +14,7 @@ export const useTokenStore = defineStore('auth', {
     actions: {
         async login(user) {
             try {
-                const response = await axios.post('http://127.0.0.1:8000/login', user);
+                const response = await axios.post('http://127.0.0.1:8009/login', user);
                 const token = response.data.access_token;
                 localStorage.setItem('token', token);
                 axios.defaults.headers.common['Authorization'] = `Bearer ${token}`;
