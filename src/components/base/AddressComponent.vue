@@ -97,6 +97,7 @@ function inputAddress(value) {
 }
 
 .autocomplete-items {
+  font-size: 0.9rem;
   position: absolute;
   border: 1px solid #d4d4d4;
   border-top: none;
@@ -104,6 +105,9 @@ function inputAddress(value) {
   top: 100%;
   left: 0;
   right: 0;
+
+  box-shadow: 0 10px 15px 9px rgba(0,0,0,0.1);
+  border-radius: 0 0 10px 10px;
 }
 
 /* vnorene divy */
