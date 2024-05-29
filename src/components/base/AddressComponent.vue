@@ -118,6 +118,13 @@ function inputAddress(value) {
 }
 
 .autocomplete-items > div > div:hover {
-  background-color: #e9e9e9;
+  background-color: #85bbab;
+  color: white;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
 }
 </style>
