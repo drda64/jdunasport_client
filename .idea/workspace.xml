@@ -4,18 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57f83120-8b58-4a1b-8964-54a4cf05da1d" name="Changes" comment="workspace update">
-      <change afterPath="$PROJECT_DIR$/src/components/create/CategoryAdderComponent.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/create/CategoryListComponent.vue" afterDir="false" />
+    <list default="true" id="57f83120-8b58-4a1b-8964-54a4cf05da1d" name="Changes" comment="changing localhost port">
+      <change afterPath="$PROJECT_DIR$/src/assets/cross.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/base/SelectComponent.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/EventItem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/DashboardView.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assets/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/axios.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/axios.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/base/AddressComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/base/AddressComponent.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/base/InputComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/base/InputComponent.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/create/CategoryAdderComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/create/CategoryAdderComponent.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/create/CategoryListComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/create/CategoryListComponent.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/stores/token.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/stores/token.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/CreateView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/CreateView.vue" afterDir="false" />
     </list>
@@ -68,6 +69,12 @@
     ]
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/assets" />
+      <recent name="$PROJECT_DIR$/public" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="run dev" type="js.build_tools.npm" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
@@ -95,7 +102,9 @@
       <workItem from="1716813586017" duration="137000" />
       <workItem from="1716813724288" duration="23549000" />
       <workItem from="1716923427576" duration="6995000" />
-      <workItem from="1716930460535" duration="4444000" />
+      <workItem from="1716930460535" duration="15567000" />
+      <workItem from="1716986679762" duration="380000" />
+      <workItem from="1716987167052" duration="12108000" />
     </task>
     <task id="LOCAL-00001" summary="inital commit">
       <option name="closed" value="true" />
@@ -297,31 +306,157 @@
       <option name="project" value="LOCAL" />
       <updated>1716908611440</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="label and error added">
+      <option name="closed" value="true" />
+      <created>1716966623173</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1716966623173</updated>
+    </task>
+    <task id="LOCAL-00027" summary="error props">
+      <option name="closed" value="true" />
+      <created>1716966632823</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1716966632823</updated>
+    </task>
+    <task id="LOCAL-00028" summary="open input style">
+      <option name="closed" value="true" />
+      <created>1716966643935</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1716966643935</updated>
+    </task>
+    <task id="LOCAL-00029" summary="autocomplete items style">
+      <option name="closed" value="true" />
+      <created>1716966656562</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1716966656562</updated>
+    </task>
+    <task id="LOCAL-00030" summary="stylement for label and items">
+      <option name="closed" value="true" />
+      <created>1716966674511</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1716966674511</updated>
+    </task>
+    <task id="LOCAL-00031" summary="changing paddings for items and background color">
+      <option name="closed" value="true" />
+      <created>1716966703787</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1716966703787</updated>
+    </task>
+    <task id="LOCAL-00032" summary="notification element">
+      <option name="closed" value="true" />
+      <created>1716966715547</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1716966715547</updated>
+    </task>
+    <task id="LOCAL-00033" summary="resizing the app">
+      <option name="closed" value="true" />
+      <created>1716966732858</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1716966732858</updated>
+    </task>
+    <task id="LOCAL-00034" summary="chaning localhost add">
+      <option name="closed" value="true" />
+      <created>1716966741017</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1716966741017</updated>
+    </task>
+    <task id="LOCAL-00035" summary="adding category adder element">
+      <option name="closed" value="true" />
+      <created>1716966750331</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1716966750331</updated>
+    </task>
+    <task id="LOCAL-00036" summary="init category list component">
+      <option name="closed" value="true" />
+      <created>1716966760893</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1716966760893</updated>
+    </task>
+    <task id="LOCAL-00037" summary="brand new create view with yup and vee validate">
+      <option name="closed" value="true" />
+      <created>1716966778276</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1716966778276</updated>
+    </task>
+    <task id="LOCAL-00038" summary="new input component to ease up the process">
+      <option name="closed" value="true" />
+      <created>1716966800115</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1716966800115</updated>
+    </task>
+    <task id="LOCAL-00039" summary="adding more styles">
+      <option name="closed" value="true" />
+      <created>1716966807912</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1716966807912</updated>
+    </task>
+    <task id="LOCAL-00040" summary="importing notifications">
+      <option name="closed" value="true" />
+      <created>1716966822258</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1716966822258</updated>
+    </task>
+    <task id="LOCAL-00041" summary="localization for vee validate - yup">
+      <option name="closed" value="true" />
+      <created>1716966842615</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1716966842615</updated>
+    </task>
+    <task id="LOCAL-00042" summary="weird files change">
+      <option name="closed" value="true" />
+      <created>1716966859192</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1716966859192</updated>
+    </task>
+    <task id="LOCAL-00043" summary="changing localhost port">
+      <option name="closed" value="true" />
+      <created>1716966872834</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1716966872834</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="inital commit" />
-    <MESSAGE value="attaching bearer to axios for every request" />
-    <MESSAGE value="deleting unnecessary styles and images" />
-    <MESSAGE value="initial store for tokens (jwt)" />
-    <MESSAGE value="adding nav links" />
-    <MESSAGE value="adding CreateView" />
-    <MESSAGE value="HomeView basic view" />
-    <MESSAGE value="adding before each to check auth store token" />
-    <MESSAGE value="init login view form" />
-    <MESSAGE value="adding pinia to main" />
-    <MESSAGE value="view for not found" />
-    <MESSAGE value="adding pinia" />
-    <MESSAGE value="console loggin update" />
-    <MESSAGE value="add address component with address autocomplete with MapBox api" />
-    <MESSAGE value="template nav and view for main app" />
-    <MESSAGE value="adding styles" />
-    <MESSAGE value="ading Category class" />
-    <MESSAGE value="refs for form" />
     <MESSAGE value="basic view" />
     <MESSAGE value="import AddressComponent" />
     <MESSAGE value="new create route" />
@@ -329,6 +464,24 @@
     <MESSAGE value="basic styles" />
     <MESSAGE value="adding styles and pinia" />
     <MESSAGE value="workspace update" />
-    <option name="LAST_COMMIT_MESSAGE" value="workspace update" />
+    <MESSAGE value="label and error added" />
+    <MESSAGE value="error props" />
+    <MESSAGE value="open input style" />
+    <MESSAGE value="autocomplete items style" />
+    <MESSAGE value="stylement for label and items" />
+    <MESSAGE value="changing paddings for items and background color" />
+    <MESSAGE value="notification element" />
+    <MESSAGE value="resizing the app" />
+    <MESSAGE value="chaning localhost add" />
+    <MESSAGE value="adding category adder element" />
+    <MESSAGE value="init category list component" />
+    <MESSAGE value="brand new create view with yup and vee validate" />
+    <MESSAGE value="new input component to ease up the process" />
+    <MESSAGE value="adding more styles" />
+    <MESSAGE value="importing notifications" />
+    <MESSAGE value="localization for vee validate - yup" />
+    <MESSAGE value="weird files change" />
+    <MESSAGE value="changing localhost port" />
+    <option name="LAST_COMMIT_MESSAGE" value="changing localhost port" />
   </component>
 </project>
