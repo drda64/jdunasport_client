@@ -4,7 +4,13 @@ import { createPinia } from 'pinia'
 import router from './router'
 import ('@/assets/main.css')
 import Notifications from '@kyvg/vue3-notification'
+import { useTokenStore } from '@/stores/token.js';
+
+// for yup validation localization
 import { setLocale } from 'yup';
+
+// setting up axios
+import './axios.js'
 
 const app = createApp(App)
 const pinia = createPinia()
