@@ -36,7 +36,19 @@ export default class EventItem {
 
         // we returning an array of EventItem objects
         return Promise.resolve(response.data.map(event => {
-            return new EventItem(event.name, event.description, event.location, event.event_time, event.sport_id, event.categories);
+            let fetchedDatetime = new Date(event.event_time);
+
+            let dateStr = `${fetchedDatetime.getDate()}.${fetchedDatetime.getMonth() + 1}.${fetchedDatetime.getFullYear()}`;
+
+            // Format the time
+            let hours = String(fetchedDatetime.getHours()).padStart(2, '0');
+            let minutes = String(fetchedDatetime.getMinutes()).padStart(2, '0');
+            let timeStr = `${hours}:${minutes}`;
+
+            const item = new EventItem(event.name, event.description, event.location, dateStr, timeStr, event.sport, event.categories);
+            item.setId(event.id);
+
+            return item;
         }));
     }
 }
