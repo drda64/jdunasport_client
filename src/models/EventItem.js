@@ -11,6 +11,10 @@ export default class EventItem {
         this.categories = categories;
     }
 
+    setId(id) {
+        this.id = id;
+    }
+
     async submitEvent() {
         await axios.post("/create_event", {
             name: this.name,
