@@ -25,6 +25,17 @@ h1 {
     margin-bottom: 20px;
 }
 
+h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+
 /* styling inputs */
 input {
     width: 100%;
@@ -91,4 +102,11 @@ select:focus {
     padding: 0.5rem 1.5rem;
     font-weight: normal;
     font-size: 0.9rem;
+}
+
+/* mark */
+mark {
+    background-color: #C4FFF1;
+    padding-left: 10px;
+    padding-right: 10px;
 }
