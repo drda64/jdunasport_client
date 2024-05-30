@@ -58,6 +58,7 @@ router.beforeEach((to, from, next) => {
   } else {
     // Continue with navigation
     console.log('User is authenticated');
+    console.log(authStore.token);
     next();
   }
 });
