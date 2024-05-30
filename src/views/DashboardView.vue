@@ -23,5 +23,16 @@ function goToEvent(id) {
 </template>
 
 <style scoped>
-/* Add your styles here */
+.container-event {
+  display: flex;
+
+  flex-wrap: wrap;
+  gap: 10px; /* Adjust the gap between items as needed */
+  box-sizing: border-box;
+}
+
+/* Base styling for the grid container */
+.container {
+}
+
 </style>
