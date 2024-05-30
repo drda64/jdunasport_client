@@ -3,6 +3,12 @@ import { RouterLink, RouterView } from 'vue-router'
 </script>
 
 <template>
+  <div v-if="token.isAuthenticated">
+    a
+  </div>
+  <div v-else>
+    na
+  </div>
   <div id="app-container">
     <nav>
       <RouterLink to="/">Dashboard</RouterLink>
