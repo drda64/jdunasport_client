@@ -1,12 +1,18 @@
 <script setup>
 import EventItem from "@/models/EventItem.js";
 import { ref, onMounted } from "vue";
+import EventComponent from "@/components/dashboard/EventComponent.vue";
+import router from "@/router/index.js";
 
 const events = ref([]);
 
 onMounted(async () => {
   events.value = await EventItem.getAllEvents();
 });
+
+function goToEvent(id) {
+  router.push(`/event/${id}`);
+}
 </script>
 
 <template>
