@@ -16,13 +16,9 @@ function goToEvent(id) {
 </script>
 
 <template>
-  <div>
-    <h1>Dashboard</h1>
-    <div v-for="event in events" :key="event.id">
-      <p>{{ event.name }}</p>
-      <p>{{ event.location }}</p>
-      <p>{{ event.description }}</p>
-    </div>
+  <h1>Dashboard</h1>
+  <div class="container-event">
+    <EventComponent v-for="event in events" :key="event.id" :event="event" @click="goToEvent(event.id)"/>
   </div>
 </template>
 
