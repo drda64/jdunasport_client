@@ -33,6 +33,12 @@ const router = createRouter({
       component: () => import(/* webpackChunkName: "create" */ '../views/CreateView.vue'),
     },
     {
+      path: '/event/:id',
+      name: 'event',
+      props: true,
+      component: () => import(/* webpackChunkName: "event" */ '../views/EventView.vue'),
+    },
+    {
       path: '/:pathMatch(.*)*',
       name: '404',
       component: () => import(/* webpackChunkName: "404" */ '../views/NotFoundView.vue'),
