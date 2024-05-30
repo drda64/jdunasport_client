@@ -51,4 +51,33 @@ export default class EventItem {
             return item;
         }));
     }
+
+    static async getEventById(id) {
+        const response = await axios.get(`/event/${id}`);
+        console.log(response.data)
+
+        let fetchedDatetime = new Date(response.data.event_time);
+
+        let dateStr = `${fetchedDatetime.getDate()}.${fetchedDatetime.getMonth() + 1}.${fetchedDatetime.getFullYear()}`;
+
+        // Format the time
+        let hours = String(fetchedDatetime.getHours()).padStart(2, '0');
+        let minutes = String(fetchedDatetime.getMinutes()).padStart(2, '0');
+        let timeStr = `${hours}:${minutes}`;
+
+        const item = new EventItem(response.data.name, response.data.description, response.data.location, dateStr, timeStr, response.data.sport, response.data.categories);
+        item.setId(response.data.id);
+
+        return Promise.resolve(item);
+    }
+
+    static async joinEvent(id, categoryId) {
+        const response = await axios.post(`/join_event/${id}`, {
+            category_id: categoryId
+        }, {
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        });
+    }
 }
