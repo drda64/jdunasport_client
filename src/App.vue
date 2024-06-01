@@ -62,28 +62,38 @@ onDeactivated(() => {
 </template>
 
 <style scoped>
-  #app-container {
-    max-width: 60rem;
-    width: 100%;
+#app-container {
+  max-width: 60rem;
+  width: 100%;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 2rem;
+}
 
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
+#view {
+  margin-top: 3rem;
+}
 
-  #view {
-    margin-top: 3rem;
-  }
+#offline {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding-top: 2rem;
+}
 
-  nav {
-    margin-top: 5rem;
-    display: flex;
-    gap: 2.5rem;
+nav {
+  margin-top: 5rem;
+  display: flex;
+  gap: 2.5rem;
+  font-size: 0.9rem;
+}
 
-    font-size: 0.9rem;
-  }
+nav a {
+  text-decoration: none;
+  color: #000;
+}
 
-  nav a {
-    text-decoration: none;
-    color: #000;
-  }
+.logout {
+  cursor: pointer;
+}
 </style>
