@@ -50,9 +50,8 @@ onDeactivated(() => {
   <div v-else-if="token.isAuthenticated" id="app-container">
     <nav>
       <RouterLink to="/">Dashboard</RouterLink>
-      <RouterLink to="/events">Přidat se do eventu</RouterLink>
       <RouterLink to="/create">Vytvořit event</RouterLink>
-      <button @click="token.logout">Odhlásit se</button>
+      <p class="logout" @click="logout">Odhlásit se</p>
     </nav>
     <div id="view">
       <RouterView />
