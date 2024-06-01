@@ -18,7 +18,7 @@ defineProps({
       </div>
     </div>
     <div class="right-group">
-      <div class="green dot"></div>
+      <div :class="event.created_by_user ? 'green dot' : 'blue dot'"></div>
     </div>
   </div>
 </template>
@@ -51,6 +51,11 @@ defineProps({
 
 .green {
   background-color: #1FC974;
+}
+
+.blue {
+  background-color: #1F9CE9;
+
 }
 
 .container:hover {
