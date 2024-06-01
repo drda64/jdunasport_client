@@ -39,8 +39,8 @@ onDeactivated(() => {
 </script>
 
 <template>
-  <div v-if="token.isAuthenticated">
-    a
+  <div v-if="!online" id="offline">
+    <h3>Bohužel se zdá, že nemáte připojení k internetu. Bez toho naše aplikace fungovat nemůže. Sportu zdar 🥅</h3>
   </div>
   <div v-else>
     na
