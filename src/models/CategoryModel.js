@@ -1,7 +1,7 @@
 import axios from "axios";
-import {Participant} from "@/models/Participant.js";
+import {ParticipantModel} from "@/models/ParticipantModel.js";
 
-export default class Category {
+export default class CategoryModel {
     constructor(id, name, capacity, participants = []) {
         this.id = id;
         this.name = name;
@@ -14,11 +14,12 @@ export default class Category {
             const response = await axios.get(`/category/${id}`);
             console.log(response.data)
             return response.data.map(category => {
-                // Mapping participants array into Participant objects
+                // Mapping participants array into ParticipantModel objects
                 const participants = category.participants.map(participant => {
-                    return new Participant(participant.id, participant.username);
+                    const date = new Date(participant.created_at)
+                    return new ParticipantModel(participant.id, participant.username, participant.substitute, date);
                 });
-                return new Category(category.id, category.name, category.capacity, participants);
+                return new CategoryModel(category.id, category.name, category.capacity, participants);
             });
         } catch (error) {
             console.error('Error fetching categories:', error);
