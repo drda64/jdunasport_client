@@ -1,14 +1,16 @@
 <script setup>
 import {useForm, validate} from 'vee-validate';
-import { ref } from 'vue';
+import {onMounted, ref} from 'vue';
 import * as yup from 'yup';
 import InputComponent from "@/components/base/InputComponent.vue";
 import AddressComponent from "@/components/base/AddressComponent.vue";
 import CategoryAdderComponent from "@/components/create/CategoryAdderComponent.vue";
 import CategoryListComponent from "@/components/create/CategoryListComponent.vue";
 import SelectComponent from "@/components/base/SelectComponent.vue";
-import EventItem from "@/models/EventItem";
+import EventModel from "@/models/EventModel.js";
 import axios from "axios";
+import router from "@/router/index.js";
+import {useTokenStore} from "@/stores/token";
 
 const categories = ref([]);
 const categoryError = ref('');
@@ -16,11 +18,19 @@ categories.value.push({name: 'Hráč', capacity: 1});
 
 const options = ref([])
 
-axios.get('http://localhost:8009/sports').then(response => {
-  return response.data.map(sport => {
-     options.value.push({value: sport.id, text: sport.name});
+onMounted(() => {
+  const token = useTokenStore();
+  if (!token.isAuthenticated) {
+    router.push('/login');
+  }
+
+  axios.get('http://localhost:8009/sports').then(response => {
+    return response.data.map(sport => {
+      options.value.push({value: sport.id, text: sport.name});
+    });
   });
 });
+
 
 const { values, errors, handleSubmit, defineField } = useForm({
   validationSchema: yup.object({
@@ -79,7 +89,7 @@ function validateCategories() {
 }
 
 function submitForm() {
-    let eventItem = new EventItem(values.name, values.description, values.address, values.date, values.time, values.sport, categories.value);
+    let eventItem = new EventModel(values.name, values.description, values.address, values.date, values.time, values.sport, categories.value);
     eventItem.submitEvent();
 }
 
