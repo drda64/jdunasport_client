@@ -1,5 +1,22 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterLink, RouterView } from 'vue-router';
+import { useTokenStore } from '@/stores/token.js';
+import router from '@/router/index.js';
+import {onDeactivated, onMounted, ref} from "vue";
+
+const token = useTokenStore();
+
+const logout = () => {
+  token.logout();
+  console.log('Logging out');
+  router.push('/login');
+}
+
+onMounted(() => {
+  window.addEventListener("online", updateOnlineStatus);
+  window.addEventListener("offline", updateOnlineStatus);
+  updateOnlineStatus();
+});
 
 import { useTokenStore } from './stores/token.js'
 
