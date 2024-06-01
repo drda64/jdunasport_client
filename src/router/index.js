@@ -1,66 +1,80 @@
-import { createRouter, createWebHistory } from 'vue-router'
-import EventView from '../views/EventView.vue'
-import {useTokenStore} from "@/stores/token.js";
-import DashboardView from "@/views/DashboardView.vue";
+// src/router/index.js
+
+import { createRouter, createWebHistory } from 'vue-router';
+import { useTokenStore } from '@/stores/token.js';
+import DashboardView from '@/views/DashboardView.vue';
+import EventView from '@/views/EventView.vue';
+import LoginView from '@/views/LoginView.vue';
+import CreateView from '@/views/CreateView.vue';
+import NotFoundView from '@/views/NotFoundView.vue';
+
+let eventParam = null
+const routes = [
+  {
+    path: '/',
+    name: 'dashboard',
+    component: DashboardView,
+    meta: { requiresAuth: true },
+  },
+  {
+    path: '/events',
+    name: 'events',
+    component: EventView,
+    meta: { requiresAuth: true },
+  },
+  {
+    path: '/login',
+    name: 'login',
+    component: LoginView,
+  },
+  {
+    path: '/create',
+    name: 'create',
+    component: CreateView,
+  },
+  {
+    path: '/event/:id',
+    name: 'event',
+    props: true,
+    component: EventView,
+    meta: { requiresAuth: true },
+  },
+  {
+    path: '/:pathMatch(.*)*',
+    name: '404',
+    redirect: { name: 'dashboard' },
+  },
+];
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
-  routes: [
-    {
-      path: '/',
-      name: 'dashboard',
-      component: DashboardView,
-      meta: {
-        requiresAuth: true
-      }
-    },
-    {
-      path: '/events',
-      name: 'events',
-      component: EventView,
-      meta: {
-          requiresAuth: true
-      }
-    },
-    {
-      path: '/login',
-      name: 'login',
-      component: () => import(/* webpackChunkName: "login" */ '../views/LoginView.vue')
-    },
-    {
-      path: '/create',
-      name: 'create',
-      component: () => import(/* webpackChunkName: "create" */ '../views/CreateView.vue'),
-    },
-    {
-      path: '/event/:id',
-      name: 'event',
-      props: true,
-      component: () => import(/* webpackChunkName: "event" */ '../views/EventView.vue'),
-    },
-    {
-      path: '/:pathMatch(.*)*',
-      name: '404',
-      component: () => import(/* webpackChunkName: "404" */ '../views/NotFoundView.vue'),
-      meta: {
-        requiresAuth: true
-      }
-    }
-  ]
-})
+  routes,
+});
 
-// Navigation guard to check authentication status
 router.beforeEach((to, from, next) => {
-  const authStore = useTokenStore();
-  if (to.matched.some(record => record.meta.requiresAuth) && !authStore.isAuthenticated) {
-    // Redirect to login page if authentication is required but user is not authenticated
+  const tokenStore = useTokenStore();
+  console.log('Navigating to:', to);
+  console.log('Navigating from:', from);
+  console.log('User authenticated:', tokenStore.isAuthenticated);
+
+  if (to.matched.some(record => record.meta.requiresAuth) && !tokenStore.isAuthenticated) {
+    if (to.name === 'event') {
+      console.log('Setting eventParam:', to.params.id)
+      eventParam = to.params.id
+    }
+
     next('/login');
-  } else {
-    // Continue with navigation
-    console.log('User is authenticated');
-    console.log(authStore.token);
+  } else if (to.name === 'login' && tokenStore.isAuthenticated) {
+    next({ name: 'dashboard' });
+  }
+  else if (tokenStore.isAuthenticated && eventParam != null) {
+    console.log('Navigating to event:', eventParam)
+    next({ name: 'event', params: { id: eventParam } })
+    eventParam = null
+  }
+  else {
     next();
   }
 });
 
-export default router
+export default router;
