@@ -18,9 +18,24 @@ onMounted(() => {
   updateOnlineStatus();
 });
 
-import { useTokenStore } from './stores/token.js'
+const online = ref(true);
 
-const token = useTokenStore()
+const updateOnlineStatus = () => {
+  console.log('Online status changed');
+  if (navigator.onLine) {
+    online.value = true;
+    console.log('Online');
+  } else {
+    online.value = false;
+    console.log('Offline');
+    router.push('/offline');
+  }
+}
+
+onDeactivated(() => {
+  window.removeEventListener("online", updateOnlineStatus);
+  window.removeEventListener("offline", updateOnlineStatus);
+})
 </script>
 
 <template>
