@@ -4,13 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57f83120-8b58-4a1b-8964-54a4cf05da1d" name="Changes" comment="new solution for get all events">
-      <change afterPath="$PROJECT_DIR$/src/models/Participant.js" afterDir="false" />
+    <list default="true" id="57f83120-8b58-4a1b-8964-54a4cf05da1d" name="Changes" comment="xml">
+      <change afterPath="$PROJECT_DIR$/src/assets/trash.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/TrashIcon.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/EventModel.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assets/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/EventItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/EventItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/axios.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/axios.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/dashboard/EventComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboard/EventComponent.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/Category.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Category.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/EventItem.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/Participant.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Participant.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/stores/token.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/stores/token.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/CreateView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/CreateView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/DashboardView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/DashboardView.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/EventView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/EventView.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -21,8 +32,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Vue Composition API Component" />
         <option value="JavaScript File" />
+        <option value="Vue Composition API Component" />
       </list>
     </option>
   </component>
@@ -41,34 +52,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;npm.run dev.executor&quot;: &quot;Run&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Applications/IntelliJ IDEA.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Node.js.EventItem.js.executor": "Debug",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.run dev.executor": "Debug",
+    "ts.external.directory.path": "/Applications/IntelliJ IDEA.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;vue.recent.templates&quot;: [
-      &quot;Vue Composition API Component&quot;
+  "keyToStringList": {
+    "vue.recent.templates": [
+      "Vue Composition API Component"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/assets" />
       <recent name="$PROJECT_DIR$/public" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Node.js.EventModel.js">
+    <configuration name="EventModel.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/models/EventModel.js" working-dir="$PROJECT_DIR$/src/models">
+      <method v="2" />
+    </configuration>
     <configuration name="run dev" type="js.build_tools.npm" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -79,6 +94,11 @@
       <envs />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.EventModel.js" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -105,79 +125,8 @@
       <workItem from="1717061112966" duration="7701000" />
       <workItem from="1717075262164" duration="597000" />
       <workItem from="1717083526624" duration="2000" />
-      <workItem from="1717083730495" duration="8436000" />
-    </task>
-    <task id="LOCAL-00024" summary="adding styles and pinia">
-      <option name="closed" value="true" />
-      <created>1716908604526</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1716908604526</updated>
-    </task>
-    <task id="LOCAL-00025" summary="workspace update">
-      <option name="closed" value="true" />
-      <created>1716908611440</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1716908611440</updated>
-    </task>
-    <task id="LOCAL-00026" summary="label and error added">
-      <option name="closed" value="true" />
-      <created>1716966623173</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1716966623173</updated>
-    </task>
-    <task id="LOCAL-00027" summary="error props">
-      <option name="closed" value="true" />
-      <created>1716966632823</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1716966632823</updated>
-    </task>
-    <task id="LOCAL-00028" summary="open input style">
-      <option name="closed" value="true" />
-      <created>1716966643935</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1716966643935</updated>
-    </task>
-    <task id="LOCAL-00029" summary="autocomplete items style">
-      <option name="closed" value="true" />
-      <created>1716966656562</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1716966656562</updated>
-    </task>
-    <task id="LOCAL-00030" summary="stylement for label and items">
-      <option name="closed" value="true" />
-      <created>1716966674511</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1716966674511</updated>
-    </task>
-    <task id="LOCAL-00031" summary="changing paddings for items and background color">
-      <option name="closed" value="true" />
-      <created>1716966703787</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1716966703787</updated>
-    </task>
-    <task id="LOCAL-00032" summary="notification element">
-      <option name="closed" value="true" />
-      <created>1716966715547</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1716966715547</updated>
+      <workItem from="1717083730495" duration="9160000" />
+      <workItem from="1717152692438" duration="35635000" />
     </task>
     <task id="LOCAL-00033" summary="resizing the app">
       <option name="closed" value="true" />
@@ -499,21 +448,85 @@
       <option name="project" value="LOCAL" />
       <updated>1717100370167</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="getting one event by id">
+      <option name="closed" value="true" />
+      <created>1717100419794</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1717100419794</updated>
+    </task>
+    <task id="LOCAL-00074" summary="new view for event">
+      <option name="closed" value="true" />
+      <created>1717100429255</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1717100429255</updated>
+    </task>
+    <task id="LOCAL-00075" summary="html and css basics">
+      <option name="closed" value="true" />
+      <created>1717100441593</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1717100441594</updated>
+    </task>
+    <task id="LOCAL-00076" summary="new route for event">
+      <option name="closed" value="true" />
+      <created>1717100449661</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1717100449662</updated>
+    </task>
+    <task id="LOCAL-00077" summary="logging token">
+      <option name="closed" value="true" />
+      <created>1717100455538</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1717100455538</updated>
+    </task>
+    <task id="LOCAL-00078" summary="head text changes">
+      <option name="closed" value="true" />
+      <created>1717100466533</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1717100466533</updated>
+    </task>
+    <task id="LOCAL-00079" summary="new Participant object">
+      <option name="closed" value="true" />
+      <created>1717100473583</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1717100473583</updated>
+    </task>
+    <task id="LOCAL-00080" summary="logging">
+      <option name="closed" value="true" />
+      <created>1717100483641</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1717100483641</updated>
+    </task>
+    <task id="LOCAL-00081" summary="xml">
+      <option name="closed" value="true" />
+      <created>1717100486803</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1717100486803</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="emit and validator" />
-    <MESSAGE value="min value add" />
-    <MESSAGE value="creating category list" />
-    <MESSAGE value="options fetching" />
-    <MESSAGE value="new elements import" />
-    <MESSAGE value="init dashboard view" />
-    <MESSAGE value="init event component" />
-    <MESSAGE value="event item class init" />
     <MESSAGE value="changing home to dashboard" />
     <MESSAGE value="adding new styles" />
     <MESSAGE value="setting up axios" />
@@ -525,12 +538,20 @@
     <MESSAGE value="new styles" />
     <MESSAGE value="just a quick checker" />
     <MESSAGE value="using token store for auth" />
-    <MESSAGE value="logging token" />
     <MESSAGE value="importing axios and adding id" />
     <MESSAGE value="new function for getting categories by event id" />
     <MESSAGE value="new designed event component" />
     <MESSAGE value="id prop" />
     <MESSAGE value="new solution for get all events" />
-    <option name="LAST_COMMIT_MESSAGE" value="new solution for get all events" />
+    <MESSAGE value="getting one event by id" />
+    <MESSAGE value="new view for event" />
+    <MESSAGE value="html and css basics" />
+    <MESSAGE value="new route for event" />
+    <MESSAGE value="logging token" />
+    <MESSAGE value="head text changes" />
+    <MESSAGE value="new Participant object" />
+    <MESSAGE value="logging" />
+    <MESSAGE value="xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="xml" />
   </component>
 </project>
