@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57f83120-8b58-4a1b-8964-54a4cf05da1d" name="Changes" comment="loading component">
+    <list default="true" id="57f83120-8b58-4a1b-8964-54a4cf05da1d" name="Changes" comment="xml update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/LoginView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/LoginView.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/RegisterView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/RegisterView.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vite.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/vite.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,31 +111,7 @@
       <workItem from="1717075262164" duration="597000" />
       <workItem from="1717083526624" duration="2000" />
       <workItem from="1717083730495" duration="9160000" />
-      <workItem from="1717152692438" duration="52588000" />
-    </task>
-    <task id="LOCAL-00078" summary="head text changes">
-      <option name="closed" value="true" />
-      <created>1717100466533</created>
-      <option name="number" value="00078" />
-      <option name="presentableId" value="LOCAL-00078" />
-      <option name="project" value="LOCAL" />
-      <updated>1717100466533</updated>
-    </task>
-    <task id="LOCAL-00079" summary="new Participant object">
-      <option name="closed" value="true" />
-      <created>1717100473583</created>
-      <option name="number" value="00079" />
-      <option name="presentableId" value="LOCAL-00079" />
-      <option name="project" value="LOCAL" />
-      <updated>1717100473583</updated>
-    </task>
-    <task id="LOCAL-00080" summary="logging">
-      <option name="closed" value="true" />
-      <created>1717100483641</created>
-      <option name="number" value="00080" />
-      <option name="presentableId" value="LOCAL-00080" />
-      <option name="project" value="LOCAL" />
-      <updated>1717100483641</updated>
+      <workItem from="1717152692438" duration="53740000" />
     </task>
     <task id="LOCAL-00081" summary="xml">
       <option name="closed" value="true" />
@@ -507,16 +481,37 @@
       <option name="project" value="LOCAL" />
       <updated>1717352267056</updated>
     </task>
-    <option name="localTasksCounter" value="127" />
+    <task id="LOCAL-00127" summary="nothing literally. blank space">
+      <option name="closed" value="true" />
+      <created>1717352321317</created>
+      <option name="number" value="00127" />
+      <option name="presentableId" value="LOCAL-00127" />
+      <option name="project" value="LOCAL" />
+      <updated>1717352321317</updated>
+    </task>
+    <task id="LOCAL-00128" summary="base url">
+      <option name="closed" value="true" />
+      <created>1717352325591</created>
+      <option name="number" value="00128" />
+      <option name="presentableId" value="LOCAL-00128" />
+      <option name="project" value="LOCAL" />
+      <updated>1717352325591</updated>
+    </task>
+    <task id="LOCAL-00129" summary="xml update">
+      <option name="closed" value="true" />
+      <created>1717352330510</created>
+      <option name="number" value="00129" />
+      <option name="presentableId" value="LOCAL-00129" />
+      <option name="project" value="LOCAL" />
+      <updated>1717352330510</updated>
+    </task>
+    <option name="localTasksCounter" value="130" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="error when no server conn" />
-    <MESSAGE value="adding headers" />
-    <MESSAGE value="new icon of dump bin" />
     <MESSAGE value="xml changes" />
     <MESSAGE value="slight design changes" />
     <MESSAGE value="changing api server" />
@@ -539,6 +534,9 @@
     <MESSAGE value="added comments" />
     <MESSAGE value="new loading store" />
     <MESSAGE value="loading component" />
-    <option name="LAST_COMMIT_MESSAGE" value="loading component" />
+    <MESSAGE value="nothing literally. blank space" />
+    <MESSAGE value="base url" />
+    <MESSAGE value="xml update" />
+    <option name="LAST_COMMIT_MESSAGE" value="xml update" />
   </component>
 </project>
