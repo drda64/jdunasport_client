@@ -4,7 +4,7 @@ import axios from 'axios';
 import { useTokenStore } from '@/stores/token.js';
 import {notify} from "@kyvg/vue3-notification";
 
-axios.defaults.baseURL = 'http://localhost:8009';
+axios.defaults.baseURL = 'https://www.drda.pro/';
 
 axios.interceptors.request.use(config => {
     const authStore = useTokenStore();
