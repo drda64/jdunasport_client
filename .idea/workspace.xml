@@ -4,23 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57f83120-8b58-4a1b-8964-54a4cf05da1d" name="Changes" comment="xml changes">
+    <list default="true" id="57f83120-8b58-4a1b-8964-54a4cf05da1d" name="Changes" comment="loading component">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/axios.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/axios.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/create/CategoryAdderComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/create/CategoryAdderComponent.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/dashboard/EventComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboard/EventComponent.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/icons/TrashIcon.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/icons/TrashIcon.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/EventModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/EventModel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stores/token.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/stores/token.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/CreateView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/CreateView.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/DashboardView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/DashboardView.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/EventView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/EventView.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/HomeView.vue" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/LoginView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/LoginView.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/NotFoundView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/RegisterView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/RegisterView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/RegisterView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vite.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/vite.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +51,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "npm.run dev.executor": "Debug",
+    "npm.run dev.executor": "Run",
     "ts.external.directory.path": "/Applications/IntelliJ IDEA.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
     "vue.rearranger.settings.migration": "true"
   },
@@ -125,191 +113,7 @@
       <workItem from="1717075262164" duration="597000" />
       <workItem from="1717083526624" duration="2000" />
       <workItem from="1717083730495" duration="9160000" />
-      <workItem from="1717152692438" duration="48588000" />
-    </task>
-    <task id="LOCAL-00055" summary="event item class init">
-      <option name="closed" value="true" />
-      <created>1717009502045</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1717009502045</updated>
-    </task>
-    <task id="LOCAL-00056" summary="changing home to dashboard">
-      <option name="closed" value="true" />
-      <created>1717009511362</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1717009511362</updated>
-    </task>
-    <task id="LOCAL-00057" summary="adding new styles">
-      <option name="closed" value="true" />
-      <created>1717009519279</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1717009519279</updated>
-    </task>
-    <task id="LOCAL-00058" summary="setting up axios">
-      <option name="closed" value="true" />
-      <created>1717009527210</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1717009527210</updated>
-    </task>
-    <task id="LOCAL-00059" summary="init select component">
-      <option name="closed" value="true" />
-      <created>1717009535316</created>
-      <option name="number" value="00059" />
-      <option name="presentableId" value="LOCAL-00059" />
-      <option name="project" value="LOCAL" />
-      <updated>1717009535316</updated>
-    </task>
-    <task id="LOCAL-00060" summary="getting token store ready for refreshing">
-      <option name="closed" value="true" />
-      <created>1717009548802</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1717009548802</updated>
-    </task>
-    <task id="LOCAL-00061" summary="xml changes">
-      <option name="closed" value="true" />
-      <created>1717009554828</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1717009554828</updated>
-    </task>
-    <task id="LOCAL-00062" summary="function for routing to an event page">
-      <option name="closed" value="true" />
-      <created>1717083938604</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1717083938605</updated>
-    </task>
-    <task id="LOCAL-00063" summary="new h1 and container">
-      <option name="closed" value="true" />
-      <created>1717083953510</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1717083953510</updated>
-    </task>
-    <task id="LOCAL-00064" summary="new styles">
-      <option name="closed" value="true" />
-      <created>1717083959820</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1717083959820</updated>
-    </task>
-    <task id="LOCAL-00065" summary="just a quick checker">
-      <option name="closed" value="true" />
-      <created>1717100274733</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1717100274734</updated>
-    </task>
-    <task id="LOCAL-00066" summary="using token store for auth">
-      <option name="closed" value="true" />
-      <created>1717100282282</created>
-      <option name="number" value="00066" />
-      <option name="presentableId" value="LOCAL-00066" />
-      <option name="project" value="LOCAL" />
-      <updated>1717100282282</updated>
-    </task>
-    <task id="LOCAL-00067" summary="logging token">
-      <option name="closed" value="true" />
-      <created>1717100288743</created>
-      <option name="number" value="00067" />
-      <option name="presentableId" value="LOCAL-00067" />
-      <option name="project" value="LOCAL" />
-      <updated>1717100288743</updated>
-    </task>
-    <task id="LOCAL-00068" summary="importing axios and adding id">
-      <option name="closed" value="true" />
-      <created>1717100298651</created>
-      <option name="number" value="00068" />
-      <option name="presentableId" value="LOCAL-00068" />
-      <option name="project" value="LOCAL" />
-      <updated>1717100298652</updated>
-    </task>
-    <task id="LOCAL-00069" summary="new function for getting categories by event id">
-      <option name="closed" value="true" />
-      <created>1717100315087</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1717100315087</updated>
-    </task>
-    <task id="LOCAL-00070" summary="new designed event component">
-      <option name="closed" value="true" />
-      <created>1717100330800</created>
-      <option name="number" value="00070" />
-      <option name="presentableId" value="LOCAL-00070" />
-      <option name="project" value="LOCAL" />
-      <updated>1717100330800</updated>
-    </task>
-    <task id="LOCAL-00071" summary="id prop">
-      <option name="closed" value="true" />
-      <created>1717100353538</created>
-      <option name="number" value="00071" />
-      <option name="presentableId" value="LOCAL-00071" />
-      <option name="project" value="LOCAL" />
-      <updated>1717100353538</updated>
-    </task>
-    <task id="LOCAL-00072" summary="new solution for get all events">
-      <option name="closed" value="true" />
-      <created>1717100370167</created>
-      <option name="number" value="00072" />
-      <option name="presentableId" value="LOCAL-00072" />
-      <option name="project" value="LOCAL" />
-      <updated>1717100370167</updated>
-    </task>
-    <task id="LOCAL-00073" summary="getting one event by id">
-      <option name="closed" value="true" />
-      <created>1717100419794</created>
-      <option name="number" value="00073" />
-      <option name="presentableId" value="LOCAL-00073" />
-      <option name="project" value="LOCAL" />
-      <updated>1717100419794</updated>
-    </task>
-    <task id="LOCAL-00074" summary="new view for event">
-      <option name="closed" value="true" />
-      <created>1717100429255</created>
-      <option name="number" value="00074" />
-      <option name="presentableId" value="LOCAL-00074" />
-      <option name="project" value="LOCAL" />
-      <updated>1717100429255</updated>
-    </task>
-    <task id="LOCAL-00075" summary="html and css basics">
-      <option name="closed" value="true" />
-      <created>1717100441593</created>
-      <option name="number" value="00075" />
-      <option name="presentableId" value="LOCAL-00075" />
-      <option name="project" value="LOCAL" />
-      <updated>1717100441594</updated>
-    </task>
-    <task id="LOCAL-00076" summary="new route for event">
-      <option name="closed" value="true" />
-      <created>1717100449661</created>
-      <option name="number" value="00076" />
-      <option name="presentableId" value="LOCAL-00076" />
-      <option name="project" value="LOCAL" />
-      <updated>1717100449662</updated>
-    </task>
-    <task id="LOCAL-00077" summary="logging token">
-      <option name="closed" value="true" />
-      <created>1717100455538</created>
-      <option name="number" value="00077" />
-      <option name="presentableId" value="LOCAL-00077" />
-      <option name="project" value="LOCAL" />
-      <updated>1717100455538</updated>
+      <workItem from="1717152692438" duration="52588000" />
     </task>
     <task id="LOCAL-00078" summary="head text changes">
       <option name="closed" value="true" />
@@ -519,38 +323,222 @@
       <option name="project" value="LOCAL" />
       <updated>1717272491715</updated>
     </task>
-    <option name="localTasksCounter" value="104" />
+    <task id="LOCAL-00104" summary="slight design changes">
+      <option name="closed" value="true" />
+      <created>1717343723467</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1717343723467</updated>
+    </task>
+    <task id="LOCAL-00105" summary="changing api server">
+      <option name="closed" value="true" />
+      <created>1717343733089</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1717343733089</updated>
+    </task>
+    <task id="LOCAL-00106" summary="adding more validation for adding category">
+      <option name="closed" value="true" />
+      <created>1717343744306</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1717343744306</updated>
+    </task>
+    <task id="LOCAL-00107" summary="adding color variable">
+      <option name="closed" value="true" />
+      <created>1717343756806</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1717343756806</updated>
+    </task>
+    <task id="LOCAL-00108" summary="deleting home view">
+      <option name="closed" value="true" />
+      <created>1717343766761</created>
+      <option name="number" value="00108" />
+      <option name="presentableId" value="LOCAL-00108" />
+      <option name="project" value="LOCAL" />
+      <updated>1717343766761</updated>
+    </task>
+    <task id="LOCAL-00109" summary="new validation scheme and styles">
+      <option name="closed" value="true" />
+      <created>1717343783218</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1717343783218</updated>
+    </task>
+    <task id="LOCAL-00110" summary="new route for registration">
+      <option name="closed" value="true" />
+      <created>1717343797644</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1717343797644</updated>
+    </task>
+    <task id="LOCAL-00111" summary="color variables">
+      <option name="closed" value="true" />
+      <created>1717343805358</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1717343805359</updated>
+    </task>
+    <task id="LOCAL-00112" summary="commenting event model">
+      <option name="closed" value="true" />
+      <created>1717343826512</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1717343826512</updated>
+    </task>
+    <task id="LOCAL-00113" summary="swal fire text change">
+      <option name="closed" value="true" />
+      <created>1717343844084</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1717343844084</updated>
+    </task>
+    <task id="LOCAL-00114" summary="new registration method">
+      <option name="closed" value="true" />
+      <created>1717343855641</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1717343855641</updated>
+    </task>
+    <task id="LOCAL-00115" summary="creating registration view">
+      <option name="closed" value="true" />
+      <created>1717343868117</created>
+      <option name="number" value="00115" />
+      <option name="presentableId" value="LOCAL-00115" />
+      <option name="project" value="LOCAL" />
+      <updated>1717343868117</updated>
+    </task>
+    <task id="LOCAL-00116" summary="color changes">
+      <option name="closed" value="true" />
+      <created>1717343884388</created>
+      <option name="number" value="00116" />
+      <option name="presentableId" value="LOCAL-00116" />
+      <option name="project" value="LOCAL" />
+      <updated>1717343884388</updated>
+    </task>
+    <task id="LOCAL-00117" summary="color changes">
+      <option name="closed" value="true" />
+      <created>1717343889470</created>
+      <option name="number" value="00117" />
+      <option name="presentableId" value="LOCAL-00117" />
+      <option name="project" value="LOCAL" />
+      <updated>1717343889471</updated>
+    </task>
+    <task id="LOCAL-00118" summary="new css animation">
+      <option name="closed" value="true" />
+      <created>1717343898432</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1717343898432</updated>
+    </task>
+    <task id="LOCAL-00119" summary="xml">
+      <option name="closed" value="true" />
+      <created>1717343901699</created>
+      <option name="number" value="00119" />
+      <option name="presentableId" value="LOCAL-00119" />
+      <option name="project" value="LOCAL" />
+      <updated>1717343901699</updated>
+    </task>
+    <task id="LOCAL-00120" summary="added loading component">
+      <option name="closed" value="true" />
+      <created>1717352183278</created>
+      <option name="number" value="00120" />
+      <option name="presentableId" value="LOCAL-00120" />
+      <option name="project" value="LOCAL" />
+      <updated>1717352183278</updated>
+    </task>
+    <task id="LOCAL-00121" summary="changing url">
+      <option name="closed" value="true" />
+      <created>1717352197084</created>
+      <option name="number" value="00121" />
+      <option name="presentableId" value="LOCAL-00121" />
+      <option name="project" value="LOCAL" />
+      <updated>1717352197084</updated>
+    </task>
+    <task id="LOCAL-00122" summary="using loading component">
+      <option name="closed" value="true" />
+      <created>1717352209334</created>
+      <option name="number" value="00122" />
+      <option name="presentableId" value="LOCAL-00122" />
+      <option name="project" value="LOCAL" />
+      <updated>1717352209334</updated>
+    </task>
+    <task id="LOCAL-00123" summary="using loading component">
+      <option name="closed" value="true" />
+      <created>1717352240393</created>
+      <option name="number" value="00123" />
+      <option name="presentableId" value="LOCAL-00123" />
+      <option name="project" value="LOCAL" />
+      <updated>1717352240393</updated>
+    </task>
+    <task id="LOCAL-00124" summary="added comments">
+      <option name="closed" value="true" />
+      <created>1717352250228</created>
+      <option name="number" value="00124" />
+      <option name="presentableId" value="LOCAL-00124" />
+      <option name="project" value="LOCAL" />
+      <updated>1717352250229</updated>
+    </task>
+    <task id="LOCAL-00125" summary="new loading store">
+      <option name="closed" value="true" />
+      <created>1717352256313</created>
+      <option name="number" value="00125" />
+      <option name="presentableId" value="LOCAL-00125" />
+      <option name="project" value="LOCAL" />
+      <updated>1717352256313</updated>
+    </task>
+    <task id="LOCAL-00126" summary="loading component">
+      <option name="closed" value="true" />
+      <created>1717352267056</created>
+      <option name="number" value="00126" />
+      <option name="presentableId" value="LOCAL-00126" />
+      <option name="project" value="LOCAL" />
+      <updated>1717352267056</updated>
+    </task>
+    <option name="localTasksCounter" value="127" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="new Participant object" />
-    <MESSAGE value="logging" />
-    <MESSAGE value="xml" />
-    <MESSAGE value="addition of logout functions and online offline events to the window" />
-    <MESSAGE value="online offline event handlers" />
-    <MESSAGE value="warning message for offline state" />
-    <MESSAGE value="not view routerlinks when not auth" />
-    <MESSAGE value="view if auth" />
-    <MESSAGE value="new loggout button" />
-    <MESSAGE value="new styles for app" />
-    <MESSAGE value="renaming" />
-    <MESSAGE value="creating participan model" />
-    <MESSAGE value="deleting old models" />
-    <MESSAGE value="renaming event model" />
-    <MESSAGE value="add functions to event view" />
-    <MESSAGE value="router reorganization" />
-    <MESSAGE value="update to main style" />
-    <MESSAGE value="adding sweet alert" />
-    <MESSAGE value="styling for event created by the current user" />
-    <MESSAGE value="loading the sports on mounted" />
-    <MESSAGE value="more functions to dashboard view. pagination" />
     <MESSAGE value="error when no server conn" />
     <MESSAGE value="adding headers" />
     <MESSAGE value="new icon of dump bin" />
     <MESSAGE value="xml changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="xml changes" />
+    <MESSAGE value="slight design changes" />
+    <MESSAGE value="changing api server" />
+    <MESSAGE value="adding more validation for adding category" />
+    <MESSAGE value="adding color variable" />
+    <MESSAGE value="deleting home view" />
+    <MESSAGE value="new validation scheme and styles" />
+    <MESSAGE value="new route for registration" />
+    <MESSAGE value="color variables" />
+    <MESSAGE value="commenting event model" />
+    <MESSAGE value="swal fire text change" />
+    <MESSAGE value="new registration method" />
+    <MESSAGE value="creating registration view" />
+    <MESSAGE value="color changes" />
+    <MESSAGE value="new css animation" />
+    <MESSAGE value="xml" />
+    <MESSAGE value="added loading component" />
+    <MESSAGE value="changing url" />
+    <MESSAGE value="using loading component" />
+    <MESSAGE value="added comments" />
+    <MESSAGE value="new loading store" />
+    <MESSAGE value="loading component" />
+    <option name="LAST_COMMIT_MESSAGE" value="loading component" />
   </component>
 </project>
