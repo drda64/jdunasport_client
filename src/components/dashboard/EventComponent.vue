@@ -50,16 +50,16 @@ defineProps({
 }
 
 .green {
-  background-color: #1FC974;
+  background-color: #41b17e;
 }
 
 .blue {
-  background-color: #1F9CE9;
+  background-color: #34485c;
 
 }
 
 .container:hover {
-  background-color: #b2e7da;
+  background-color: #c7c7c7;
   cursor: pointer;
 }
 
