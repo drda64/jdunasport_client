@@ -16,11 +16,20 @@
   height: 1.5rem; /* Adjust height to make it bigger */
   transition: fill 0.3s ease; /* Smooth transition for fill change */
   cursor: pointer;
-  margin-top: 0.5rem;
 }
 
 .icon:hover {
-  fill: #d36767; /* Change to desired hover color */
+  fill: #41b17e; /* Change to desired hover color */
+  animation: linear 2s rotate infinite; /* Rotate the icon on hover */
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 </style>
