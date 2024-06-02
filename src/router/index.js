@@ -6,7 +6,7 @@ import DashboardView from '@/views/DashboardView.vue';
 import EventView from '@/views/EventView.vue';
 import LoginView from '@/views/LoginView.vue';
 import CreateView from '@/views/CreateView.vue';
-import NotFoundView from '@/views/NotFoundView.vue';
+import RegisterView from "@/views/RegisterView.vue";
 
 let eventParam = null
 const routes = [
@@ -28,9 +28,15 @@ const routes = [
     component: LoginView,
   },
   {
+    path: '/register',
+    name: 'register',
+    component: RegisterView,
+  },
+  {
     path: '/create',
     name: 'create',
     component: CreateView,
+    meta: { requiresAuth: true },
   },
   {
     path: '/event/:id',
