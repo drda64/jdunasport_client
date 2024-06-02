@@ -51,11 +51,9 @@ function pushDateButton() {
   if (buttonDateTitle.value === "Od nejbližšího data") {
     buttonDateTitle.value = "Od nejvzdálenějšího data";
     buttonDate.value = true;
-    //events.value = await EventModel.getAllEvents();
   } else {
     buttonDateTitle.value = "Od nejbližšího data";
     buttonDate.value = false;
-    //events.value = await EventModel.getAllEvents();
   }
   console.log(buttonDate.value);
   fetchEventData()
@@ -119,7 +117,8 @@ button {
 
   margin-bottom: 2rem;
 
-  background-color: #b2e7da;
+  background-color: var(--primary-color);
+  color: white;
 }
 
 button.pager {
