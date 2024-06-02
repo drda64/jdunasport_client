@@ -95,7 +95,12 @@ function validateCategories() {
 function submitForm() {
     let eventItem = new EventModel(values.name, values.description, values.address, values.date, values.time, values.sport, categories.value);
     eventItem.submitEvent();
-    router.push('/');
+
+    notify({
+      type: 'success',
+      title: 'Úspěch',
+      text: 'Event byl úspěšně vytvořen'
+    });
 }
 
 
