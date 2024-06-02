@@ -25,17 +25,33 @@ function validateSubmit() {
 }
 
 function validateCategoryNumber() {
-  if (categoryNumber.value > 0) {
-    return true
-  }
-  else {
+  if (categoryNumber.value <= 0) {
     notify({
-      title: "Kapacita kategorie",
-      text: "Musí být více než 0",
-      type: "error"
+      type: 'error',
+      title: 'Chyba',
+      text: 'Kapacita kategorie musí být větší než 0'
     });
-    return false
+    return false;
   }
+  if (categoryNumber.value > 100) {
+    notify({
+      type: 'error',
+      title: 'Chyba',
+      text: 'Kapacita kategorie nesmí být větší než 100'
+    });
+    return false;
+  }
+  if (categoryName.value === '') {
+    notify({
+      type: 'error',
+      title: 'Chyba',
+      text: 'Název kategorie nesmí být prázdný'
+    });
+    return false;
+  }
+
+  return true;
+
 }
 </script>
 
