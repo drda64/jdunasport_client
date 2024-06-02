@@ -24,14 +24,15 @@ onMounted(() => {
     router.push('/login');
   }
 
-  axios.get('http://localhost:8009/sports').then(response => {
+  // fetching sport options
+  axios.get('/sports').then(response => {
     return response.data.map(sport => {
       options.value.push({value: sport.id, text: sport.name});
     });
   });
 });
 
-
+// define validation schema
 const { values, errors, handleSubmit, defineField } = useForm({
   validationSchema: yup.object({
     name: yup.string().required(),
@@ -134,7 +135,7 @@ form {
 button {
   background-color: var(--primary-color);
   border: none;
-
+  color: white;
   padding: 1rem;
 
   font-size: 0.9rem;
