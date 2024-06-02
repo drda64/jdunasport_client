@@ -12,6 +12,12 @@
     padding: 0;
 }
 
+:root {
+    --primary-color: #5EC4B1;
+    --error-color: #e56f6f;
+    --tertiary-color: #f7f7f7;
+}
+
 #app {
     display: flex;
     justify-content: center;
@@ -96,16 +102,18 @@ select:focus {
 }
 
 .error {
-    background-color: #f54646;
+    background-color: var(--error-color);
     color: white;
     padding: 0.5rem 1.5rem;
     font-weight: normal;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
 }
 
 /* mark */
 mark {
-    background-color: #C4FFF1;
+    background-color: var(--primary-color);
     padding-left: 10px;
     padding-right: 10px;
+    color: white;
 }
