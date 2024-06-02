@@ -3,6 +3,7 @@
 import { ref } from 'vue';
 import { defineProps } from 'vue';
 
+// defining props
 const props = defineProps({
   modelValue: [String, Number],
   label: String,
@@ -12,9 +13,11 @@ const props = defineProps({
   error: String
 })
 
+// defining emits
 const emit = defineEmits(['update:modelValue']);
 
 const inputValue = ref(props.modelValue);
+
 const updateValue = (event) => {
   emit('update:modelValue', event.target.value);
   inputValue.value = event.target.value;
