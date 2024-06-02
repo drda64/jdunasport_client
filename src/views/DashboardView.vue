@@ -4,6 +4,7 @@ import {ref, onMounted, onUnmounted} from "vue";
 import EventComponent from "@/components/dashboard/EventComponent.vue";
 import router from "@/router/index.js";
 import {useTokenStore} from "@/stores/token.js";
+import {useLoaderStore} from "@/stores/loader.js";
 
 const events = ref([]);
 const buttonHistoryTitle = ref("Zobrazit proběhlé eventy");
@@ -14,24 +15,33 @@ const page_number = ref(1);
 const totalPages = ref(0);
 
 const token = useTokenStore()
+const loader = useLoaderStore()
 
 onMounted(async () => {
   await fetchEventData()
 });
 
+// function to go to event
 function goToEvent(id) {
   router.push(`/event/${id}`);
 }
 
+// function to fetch event data
 async function fetchEventData() {
+  loader.startLoading();
   if (!token.isAuthenticated) {
     return;
   }
 
+  // Fetch events
   const response = await EventModel.getAllEvents(buttonHistory, buttonDate, page_number);
+
+  // Set reactive variables
   totalPages.value = response.totalPages;
   events.value = response.events;
   page_number.value = response.currentPage;
+
+  loader.stopLoading();
 }
 
 function pushHistoryButton() {
@@ -60,6 +70,7 @@ function pushDateButton() {
 }
 
 function nextPage() {
+  // Check if there is a next page
   if (page_number.value < totalPages.value) {
     page_number.value++;
     console.log(page_number.value);
@@ -68,18 +79,13 @@ function nextPage() {
 }
 
 function previousPage() {
+  // Check if there is a previous page
   if (page_number.value > 1) {
     page_number.value--;
     console.log(page_number.value);
     fetchEventData();
   }
 }
-
-onUnmounted(() => {
-  console.log("Unmounted");
-});
-
-
 </script>
 
 <template>
@@ -87,7 +93,7 @@ onUnmounted(() => {
   <h1>Dashboard</h1>
   <button @click="pushHistoryButton">{{ buttonHistoryTitle }}</button>
   <button @click="pushDateButton">{{ buttonDateTitle }}</button>
-  <p v-if="events.length < 1">Bohužel zde nemáte žádné eventy. Přidejte si ho přes odkaz či vytvořte vlastní.</p>
+  <p v-if="events.length < 1 && !loader.loading">Bohužel zde nemáte žádné eventy. Přidejte si ho přes odkaz či vytvořte vlastní.</p>
   <div class="container-event">
     <EventComponent v-for="event in events" :key="event.id" :event="event" @click="goToEvent(event.id)"/>
   </div>
