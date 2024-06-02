@@ -5,6 +5,7 @@ import EventModel from "@/models/EventModel.js";
 import CategoryModel from "@/models/CategoryModel.js";
 import TrashIcon from "@/icons/TrashIcon.vue";
 import router from "@/router/index.js";
+import {useLoaderStore} from "@/stores/loader.js";
 
 // Define props
 const props = defineProps({
@@ -17,12 +18,15 @@ const categories = ref([]);
 const userInEvent = ref("");
 const categoryOfUser = ref(0)
 
+const loader = useLoaderStore();
+
 // Fetch event item data when the component is mounted
 onMounted(async () => {
   await fetchEventData();
 });
 
 async function fetchEventData() {
+  loader.startLoading();
   eventItem.value = await EventModel.getEventById(props.id);
   categories.value = await CategoryModel.getCategoriesById(props.id);
 
@@ -30,6 +34,7 @@ async function fetchEventData() {
   const object = await EventModel.isUserInEvent(props.id);
   userInEvent.value = object.username;
   categoryOfUser.value = object.category_id;
+  loader.stopLoading();
 }
 
 async function joinEvent(categoryId) {
