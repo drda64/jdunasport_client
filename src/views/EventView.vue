@@ -49,7 +49,7 @@ async function joinEvent(categoryId) {
 function leaveEvent(categoryId) {
   return new Promise((resolve) => {
     Swal.fire({
-      title: 'Opravdu chcete opustit pozici?',
+      title: 'Opravdu chcete opustit svoji pozici?',
       showCancelButton: true,
       confirmButtonText: 'Ano',
       confirmButtonColor: '#f54646',
@@ -70,7 +70,7 @@ function leaveEvent(categoryId) {
 
 function deleteEvent() {
   Swal.fire({
-    title: 'Opravdu chcete smazat event?',
+    title: 'Opravdu chcete smazat tento event?',
     showCancelButton: true,
     confirmButtonText: 'Ano',
     confirmButtonColor: '#f54646',
@@ -98,7 +98,12 @@ function deleteEvent() {
         <p>/ {{ eventItem.time }}</p>
         <p>/ {{ eventItem.location }}</p>
       </div>
-      <TrashIcon @click="deleteEvent" v-if="eventItem.created_by_user"></TrashIcon>
+      <div>
+        <aside id="toolbar">
+          <p @click="eventItem.downloadICal()">Stáhnout iCal</p>
+          <TrashIcon @click="deleteEvent" v-if="eventItem.created_by_user"></TrashIcon>
+        </aside>
+      </div>
     </header>
 
     <div v-for="category in categories" :key="category.id">
@@ -163,7 +168,18 @@ div > p:nth-of-type(n+3) {
 }
 
 .leave {
-  color: #f54646;
+  color: #41b17e;
+}
+
+#toolbar {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  align-items: center;
+}
+
+#toolbar:nth-child(n) {
+  cursor: pointer;
 }
 
 .add:hover, .leave:hover {
@@ -202,7 +218,7 @@ tr.user {
 }
 
 th {
-  background-color: #3a3db2;
+  background-color: var(--primary-color);
   border: none;
   color: white;
   font-weight: 500;
