@@ -82,7 +82,8 @@ function validateCategories() {
   if (categories.value.length === 0) {
     categoryError.value = 'Alespoň jedna kategorie musí být přidána';
     return false
-  } else {
+  }
+  else {
     categoryError.value = '';
     return true
   }
@@ -114,8 +115,6 @@ function submitForm() {
       <button type="submit">Vytvořit event</button>
     </div>
   </form>
-  <pre>{{ values }}</pre>
-  <pre>{{ errors }}</pre>
 </template>
 
 <style scoped>
@@ -133,7 +132,7 @@ form {
 }
 
 button {
-  background-color: #5EC4B1;
+  background-color: var(--primary-color);
   border: none;
 
   padding: 1rem;
