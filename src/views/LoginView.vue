@@ -1,37 +1,77 @@
 <script setup>
-import { ref } from 'vue';
-import { useTokenStore } from '../stores/token.js';
-import { useRouter } from 'vue-router';
+import {useForm} from 'vee-validate';
+import * as yup from 'yup';
+import {ref} from 'vue';
+import {useTokenStore} from '@/stores/token';
+import {useRouter} from 'vue-router';
+import InputComponent from "@/components/base/InputComponent.vue";
 
 // Define reactive state
-const username = ref('');
-const password = ref('');
 const error = ref('');
 
 const authStore = useTokenStore();
 const router = useRouter();
 
-const login = async () => {
+// Define the validation schema
+const {values, errors, handleSubmit, defineField } = useForm({
+  validationSchema: yup.object({
+    username: yup.string().required(),
+    password: yup.string().required()
+  }),
+});
+
+// Define form fields
+const [username, usernameAttrs] = defineField('username');
+const [password, passwordAttrs] = defineField('password');
+
+// Define the login function
+const login = handleSubmit(async () => {
   error.value = ''; // Clear any previous errors
   try {
-    await authStore.login({ username: username.value, password: password.value }).then(() => {
-      router.push('/')
-    });
-    // Redirect to home page after successful login
-  } catch (err) {
-    error.value = 'Invalid username or password';
-  }
-};
+    const response = await authStore.login({username: values.username, password: values.password});
+    router.push('/');
 
+    console.log(response);
+    if (response) {
+      error.value = response;
+    }
+
+  } catch (err) {
+    error.value = 'Něco se pokazilo...';
+  }
+});
 </script>
 
 <template>
-  <div v-if="!authStore.isAuthenticated">
+  <div class="container" v-if="!authStore.isAuthenticated">
     <form @submit.prevent="login">
-      <input type="text" v-model="username" placeholder="Username" required />
-      <input type="password" v-model="password" placeholder="Password" required />
-      <button type="submit">Login</button>
+      <InputComponent v-model="username" v-bind="usernameAttrs" :error="errors.username" label="Uživatelské jméno" />
+      <InputComponent v-model="password" v-bind="passwordAttrs" :error="errors.password" label="Heslo" type="password" />
+
+      <button type="submit">Přihlásit se</button>
+      <p v-if=error class="error">{{ error }}</p>
     </form>
-    <p v-if="error">{{ error }}</p>
   </div>
 </template>
+
+<style scoped>
+form {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+
+  padding: 1rem;
+
+  box-shadow: 0px 10px 15px 10px rgba(0,0,0,0.1);
+}
+
+button {
+  background-color: var(--primary-color);
+  border: none;
+  width: 100%;
+  padding: 1rem;
+
+  color: white;
+  font-size: 0.9rem;
+}
+</style>
