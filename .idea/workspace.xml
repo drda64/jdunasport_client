@@ -4,25 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57f83120-8b58-4a1b-8964-54a4cf05da1d" name="Changes" comment="xml">
-      <change afterPath="$PROJECT_DIR$/src/assets/trash.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/icons/TrashIcon.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/EventModel.js" afterDir="false" />
+    <list default="true" id="57f83120-8b58-4a1b-8964-54a4cf05da1d" name="Changes" comment="xml changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assets/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/axios.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/axios.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/create/CategoryAdderComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/create/CategoryAdderComponent.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/dashboard/EventComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboard/EventComponent.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/Category.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Category.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/EventItem.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/Participant.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Participant.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/icons/TrashIcon.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/icons/TrashIcon.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/EventModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/EventModel.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/stores/token.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/stores/token.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/CreateView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/CreateView.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/DashboardView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/DashboardView.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/EventView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/EventView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/HomeView.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/LoginView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/LoginView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/NotFoundView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/RegisterView.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +53,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Node.js.EventItem.js.executor": "Debug",
+    "Node.js.EventModel.js.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
@@ -80,7 +79,7 @@
       <recent name="$PROJECT_DIR$/public" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.EventModel.js">
+  <component name="RunManager" selected="npm.run dev">
     <configuration name="EventModel.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/models/EventModel.js" working-dir="$PROJECT_DIR$/src/models">
       <method v="2" />
     </configuration>
@@ -126,183 +125,7 @@
       <workItem from="1717075262164" duration="597000" />
       <workItem from="1717083526624" duration="2000" />
       <workItem from="1717083730495" duration="9160000" />
-      <workItem from="1717152692438" duration="35635000" />
-    </task>
-    <task id="LOCAL-00033" summary="resizing the app">
-      <option name="closed" value="true" />
-      <created>1716966732858</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1716966732858</updated>
-    </task>
-    <task id="LOCAL-00034" summary="chaning localhost add">
-      <option name="closed" value="true" />
-      <created>1716966741017</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1716966741017</updated>
-    </task>
-    <task id="LOCAL-00035" summary="adding category adder element">
-      <option name="closed" value="true" />
-      <created>1716966750331</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1716966750331</updated>
-    </task>
-    <task id="LOCAL-00036" summary="init category list component">
-      <option name="closed" value="true" />
-      <created>1716966760893</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1716966760893</updated>
-    </task>
-    <task id="LOCAL-00037" summary="brand new create view with yup and vee validate">
-      <option name="closed" value="true" />
-      <created>1716966778276</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1716966778276</updated>
-    </task>
-    <task id="LOCAL-00038" summary="new input component to ease up the process">
-      <option name="closed" value="true" />
-      <created>1716966800115</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1716966800115</updated>
-    </task>
-    <task id="LOCAL-00039" summary="adding more styles">
-      <option name="closed" value="true" />
-      <created>1716966807912</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1716966807912</updated>
-    </task>
-    <task id="LOCAL-00040" summary="importing notifications">
-      <option name="closed" value="true" />
-      <created>1716966822258</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1716966822258</updated>
-    </task>
-    <task id="LOCAL-00041" summary="localization for vee validate - yup">
-      <option name="closed" value="true" />
-      <created>1716966842615</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1716966842615</updated>
-    </task>
-    <task id="LOCAL-00042" summary="weird files change">
-      <option name="closed" value="true" />
-      <created>1716966859192</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1716966859192</updated>
-    </task>
-    <task id="LOCAL-00043" summary="changing localhost port">
-      <option name="closed" value="true" />
-      <created>1716966872834</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1716966872834</updated>
-    </task>
-    <task id="LOCAL-00044" summary="pridani tlacitka na odhlaseni">
-      <option name="closed" value="true" />
-      <created>1717009332668</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1717009332668</updated>
-    </task>
-    <task id="LOCAL-00045" summary="import spravneho token storu">
-      <option name="closed" value="true" />
-      <created>1717009347496</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1717009347496</updated>
-    </task>
-    <task id="LOCAL-00046" summary="empty line">
-      <option name="closed" value="true" />
-      <created>1717009368592</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1717009368592</updated>
-    </task>
-    <task id="LOCAL-00047" summary="emit and validator">
-      <option name="closed" value="true" />
-      <created>1717009386881</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1717009386881</updated>
-    </task>
-    <task id="LOCAL-00048" summary="min value add">
-      <option name="closed" value="true" />
-      <created>1717009414300</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1717009414300</updated>
-    </task>
-    <task id="LOCAL-00049" summary="creating category list">
-      <option name="closed" value="true" />
-      <created>1717009429162</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1717009429162</updated>
-    </task>
-    <task id="LOCAL-00050" summary="options fetching">
-      <option name="closed" value="true" />
-      <created>1717009444570</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1717009444571</updated>
-    </task>
-    <task id="LOCAL-00051" summary="new elements import">
-      <option name="closed" value="true" />
-      <created>1717009457911</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1717009457911</updated>
-    </task>
-    <task id="LOCAL-00052" summary="new elements import">
-      <option name="closed" value="true" />
-      <created>1717009462270</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1717009462270</updated>
-    </task>
-    <task id="LOCAL-00053" summary="init dashboard view">
-      <option name="closed" value="true" />
-      <created>1717009483321</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1717009483321</updated>
-    </task>
-    <task id="LOCAL-00054" summary="init event component">
-      <option name="closed" value="true" />
-      <created>1717009494630</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1717009494630</updated>
+      <workItem from="1717152692438" duration="48588000" />
     </task>
     <task id="LOCAL-00055" summary="event item class init">
       <option name="closed" value="true" />
@@ -520,38 +343,214 @@
       <option name="project" value="LOCAL" />
       <updated>1717100486803</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="addition of logout functions and online offline events to the window">
+      <option name="closed" value="true" />
+      <created>1717272068618</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1717272068620</updated>
+    </task>
+    <task id="LOCAL-00083" summary="online offline event handlers">
+      <option name="closed" value="true" />
+      <created>1717272095211</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1717272095211</updated>
+    </task>
+    <task id="LOCAL-00084" summary="warning message for offline state">
+      <option name="closed" value="true" />
+      <created>1717272107229</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1717272107229</updated>
+    </task>
+    <task id="LOCAL-00085" summary="not view routerlinks when not auth">
+      <option name="closed" value="true" />
+      <created>1717272134854</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1717272134855</updated>
+    </task>
+    <task id="LOCAL-00086" summary="view if auth">
+      <option name="closed" value="true" />
+      <created>1717272150795</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1717272150795</updated>
+    </task>
+    <task id="LOCAL-00087" summary="new loggout button">
+      <option name="closed" value="true" />
+      <created>1717272161638</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1717272161638</updated>
+    </task>
+    <task id="LOCAL-00088" summary="new styles for app">
+      <option name="closed" value="true" />
+      <created>1717272173602</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1717272173602</updated>
+    </task>
+    <task id="LOCAL-00089" summary="renaming">
+      <option name="closed" value="true" />
+      <created>1717272193326</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1717272193326</updated>
+    </task>
+    <task id="LOCAL-00090" summary="creating participan model">
+      <option name="closed" value="true" />
+      <created>1717272204100</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1717272204100</updated>
+    </task>
+    <task id="LOCAL-00091" summary="deleting old models">
+      <option name="closed" value="true" />
+      <created>1717272214007</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1717272214007</updated>
+    </task>
+    <task id="LOCAL-00092" summary="renaming event model">
+      <option name="closed" value="true" />
+      <created>1717272225043</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1717272225043</updated>
+    </task>
+    <task id="LOCAL-00093" summary="add functions to event view">
+      <option name="closed" value="true" />
+      <created>1717272294026</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1717272294026</updated>
+    </task>
+    <task id="LOCAL-00094" summary="router reorganization">
+      <option name="closed" value="true" />
+      <created>1717272310369</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1717272310369</updated>
+    </task>
+    <task id="LOCAL-00095" summary="update to main style">
+      <option name="closed" value="true" />
+      <created>1717272319682</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1717272319682</updated>
+    </task>
+    <task id="LOCAL-00096" summary="adding sweet alert">
+      <option name="closed" value="true" />
+      <created>1717272328707</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1717272328707</updated>
+    </task>
+    <task id="LOCAL-00097" summary="styling for event created by the current user">
+      <option name="closed" value="true" />
+      <created>1717272354923</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1717272354923</updated>
+    </task>
+    <task id="LOCAL-00098" summary="loading the sports on mounted">
+      <option name="closed" value="true" />
+      <created>1717272373846</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1717272373846</updated>
+    </task>
+    <task id="LOCAL-00099" summary="more functions to dashboard view. pagination">
+      <option name="closed" value="true" />
+      <created>1717272396421</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1717272396421</updated>
+    </task>
+    <task id="LOCAL-00100" summary="error when no server conn">
+      <option name="closed" value="true" />
+      <created>1717272434439</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1717272434439</updated>
+    </task>
+    <task id="LOCAL-00101" summary="adding headers">
+      <option name="closed" value="true" />
+      <created>1717272447397</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1717272447397</updated>
+    </task>
+    <task id="LOCAL-00102" summary="new icon of dump bin">
+      <option name="closed" value="true" />
+      <created>1717272481312</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1717272481312</updated>
+    </task>
+    <task id="LOCAL-00103" summary="xml changes">
+      <option name="closed" value="true" />
+      <created>1717272491714</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1717272491715</updated>
+    </task>
+    <option name="localTasksCounter" value="104" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="changing home to dashboard" />
-    <MESSAGE value="adding new styles" />
-    <MESSAGE value="setting up axios" />
-    <MESSAGE value="init select component" />
-    <MESSAGE value="getting token store ready for refreshing" />
-    <MESSAGE value="xml changes" />
-    <MESSAGE value="function for routing to an event page" />
-    <MESSAGE value="new h1 and container" />
-    <MESSAGE value="new styles" />
-    <MESSAGE value="just a quick checker" />
-    <MESSAGE value="using token store for auth" />
-    <MESSAGE value="importing axios and adding id" />
-    <MESSAGE value="new function for getting categories by event id" />
-    <MESSAGE value="new designed event component" />
-    <MESSAGE value="id prop" />
-    <MESSAGE value="new solution for get all events" />
-    <MESSAGE value="getting one event by id" />
-    <MESSAGE value="new view for event" />
-    <MESSAGE value="html and css basics" />
-    <MESSAGE value="new route for event" />
-    <MESSAGE value="logging token" />
-    <MESSAGE value="head text changes" />
     <MESSAGE value="new Participant object" />
     <MESSAGE value="logging" />
     <MESSAGE value="xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="xml" />
+    <MESSAGE value="addition of logout functions and online offline events to the window" />
+    <MESSAGE value="online offline event handlers" />
+    <MESSAGE value="warning message for offline state" />
+    <MESSAGE value="not view routerlinks when not auth" />
+    <MESSAGE value="view if auth" />
+    <MESSAGE value="new loggout button" />
+    <MESSAGE value="new styles for app" />
+    <MESSAGE value="renaming" />
+    <MESSAGE value="creating participan model" />
+    <MESSAGE value="deleting old models" />
+    <MESSAGE value="renaming event model" />
+    <MESSAGE value="add functions to event view" />
+    <MESSAGE value="router reorganization" />
+    <MESSAGE value="update to main style" />
+    <MESSAGE value="adding sweet alert" />
+    <MESSAGE value="styling for event created by the current user" />
+    <MESSAGE value="loading the sports on mounted" />
+    <MESSAGE value="more functions to dashboard view. pagination" />
+    <MESSAGE value="error when no server conn" />
+    <MESSAGE value="adding headers" />
+    <MESSAGE value="new icon of dump bin" />
+    <MESSAGE value="xml changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="xml changes" />
   </component>
 </project>
