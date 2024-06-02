@@ -43,16 +43,20 @@ onDeactivated(() => {
     <h3>Bohužel se zdá, že nemáte připojení k internetu. Bez toho naše aplikace fungovat nemůže. Sportu zdar 🥅</h3>
   </div>
 
-  <div v-else-if="!token.isAuthenticated">
-    <RouterView />
-  </div>
-
-  <div v-else-if="token.isAuthenticated" id="app-container">
-    <nav>
+  <div v-else id="app-container">
+    <nav v-if="token.isAuthenticated">
       <RouterLink to="/">Dashboard</RouterLink>
       <RouterLink to="/create">Vytvořit event</RouterLink>
       <p class="logout" @click="logout">Odhlásit se</p>
     </nav>
+    <div v-if="!token.isAuthenticated" id="welcome">
+      <p>Vítejte do projektu <mark>jdunasport.cz</mark> a udělejte si přehled o svých sportovních akcích.</p>
+    </div>
+    <nav v-if="!token.isAuthenticated">
+      <RouterLink to="/login">Přihlásit se</RouterLink>
+      <RouterLink to="/register">Registrovat se</RouterLink>
+    </nav>
+
     <div id="view">
       <RouterView />
     </div>
@@ -74,11 +78,20 @@ onDeactivated(() => {
   margin-top: 3rem;
 }
 
+#welcome {
+  margin-top: 3rem;
+  text-align: center;
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+}
+
 #offline {
   display: flex;
   justify-content: center;
   align-content: center;
-  padding-top: 2rem;
+  padding: 2rem;
+
 }
 
 nav {
