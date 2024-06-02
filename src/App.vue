@@ -3,6 +3,7 @@ import { RouterLink, RouterView } from 'vue-router';
 import { useTokenStore } from '@/stores/token.js';
 import router from '@/router/index.js';
 import {onDeactivated, onMounted, ref} from "vue";
+import LoadingComponent from "@/components/base/LoadingComponent.vue";
 
 const token = useTokenStore();
 
@@ -39,6 +40,8 @@ onDeactivated(() => {
 </script>
 
 <template>
+  <LoadingComponent />
+
   <div v-if="!online" id="offline">
     <h3>Bohužel se zdá, že nemáte připojení k internetu. Bez toho naše aplikace fungovat nemůže. Sportu zdar 🥅</h3>
   </div>
