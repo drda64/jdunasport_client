@@ -11,6 +11,8 @@ import EventModel from "@/models/EventModel.js";
 import axios from "axios";
 import router from "@/router/index.js";
 import {useTokenStore} from "@/stores/token";
+import {useNotification} from "@kyvg/vue3-notification";
+const { notify }  = useNotification()
 
 const categories = ref([]);
 const categoryError = ref('');
@@ -93,6 +95,7 @@ function validateCategories() {
 function submitForm() {
     let eventItem = new EventModel(values.name, values.description, values.address, values.date, values.time, values.sport, categories.value);
     eventItem.submitEvent();
+    router.push('/');
 }
 
 
