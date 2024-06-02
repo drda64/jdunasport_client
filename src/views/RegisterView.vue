@@ -77,7 +77,6 @@ form {
   flex-direction: column;
 
   padding: 1rem;
-
   box-shadow: 0px 10px 15px 10px rgba(0,0,0,0.1);
 }
 
